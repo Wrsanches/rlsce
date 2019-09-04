@@ -1,1 +1,1 @@
-# Laura Sentry Capture
+# Robô Laura Sentry Capture Exception (RLSCE)
