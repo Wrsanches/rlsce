@@ -8,17 +8,13 @@ class Sentry:
 
     @staticmethod
     def send(function, exception):
-        global date_exceptions
-
-        date_exceptions[function] = datetime.now()
+        Sentry.date_exceptions[function] = datetime.now()
         capture_exception(exception)
 
     @staticmethod
     def send_exception(function, exception, minutes):
-        global date_exceptions
-
         try:
-            last_exception_date = date_exceptions[function]
+            last_exception_date = Sentry.date_exceptions[function]
             if last_exception_date <= (datetime.now() - timedelta(minutes=minutes)):
                 Sentry.send(function, exception)
 
