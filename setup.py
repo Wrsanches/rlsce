@@ -3,7 +3,7 @@ setup(
     # How you named your package folder (MyLib)
     name='rlsce',
     packages=['rlsce'],   # Chose the same as "name"
-    version='0.2',      # Start with a small number and increase it with every change you make
+    version='0.3',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
@@ -13,7 +13,7 @@ setup(
     # Provide either the link to your github or to your website
     url='https://github.com/Wrsanches/rlsce',
     # I explain this later on
-    download_url='https://github.com/Wrsanches/rlsce/archive/v0.2.tar.gz',
+    download_url='https://github.com/Wrsanches/rlsce/archive/v0.3.tar.gz',
     # Keywords that define your package best
     keywords=['Robo', 'Laura', 'Sentry', 'Capture', 'Exception'],
     install_requires=[            # I get to this in a second
